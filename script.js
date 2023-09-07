@@ -44,7 +44,7 @@ const renderlist =(state)=>{
     list.innerHTML =''
     const state = store.getState()
     state.groceries.forEach(grocery =>{
-        let li=document.createElement('li')
+        let li = document.createElement('li')
         list.append(li)
         li.textContent = grocery.text
     })
